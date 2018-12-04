@@ -1,0 +1,169 @@
+html {
+    margin: 55px 40px 100px 40px;
+    font-family: "Roboto", sans-serif;
+}
+.Header {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    box-shadow: 0 5px 2px 0px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.navlist {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.navitem {
+    display: flex;
+    flex-direction: row;
+    color: rgb(80, 80, 80);
+    margin-left: 80px;
+}
+.box {
+    position: relative;
+    width: 1255px;
+    height: 500px;
+    border: 1px rgb(175, 175, 175) solid;
+    overflow: hidden;
+}
+.dogpic {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.box-desc {
+    position: absolute;
+    z-index: 2;
+    width: 1255px;
+    background-color: white;
+    color: rgb(175, 175, 175);
+    padding-left: 1em;
+    bottom: 0px;
+    font-size: 20px;
+}
+.news {
+    position: relative;
+    color: rgba(0, 0, 0, 0.65);
+}
+.newsmore {
+    float: right;
+}
+.newslist {
+    padding-left: 0;
+}
+.news-list {
+    list-style: none;
+    line-height: 60px;
+    border-bottom: 1px solid;
+}
+.games {
+    padding-top: 1em;
+}
+.scores-table {
+    width: 100%;
+}
+.scores-table th,.scores-table td {
+    padding: 1em;
+}
+th{
+    color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.winner {
+    font-weight: bold;
+}
+.scores-table td:nth-child(3) {
+    text-align: right;
+}
+
+.scores-table td:nth-child(2),
+.scores-table td:nth-child(5) {
+    text-align: center;
+}
+.weather {
+    margin-top: 50px;
+}
+.weather h2 {
+    font-weight: 300;
+}
+.weather p {
+    font-weight: bold;
+}
+.forecast {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.days{
+    margin-left: 50px;
+}
+.daylist {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.days-list {
+    list-style-type: none;
+}
+.weather-pics {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.weather-list {
+    width: 175px;
+    height: 175px;
+}
+.temp {
+    margin-left: 50px;
+}
+.templist {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.temp-list {
+    list-style-type: none;
+}
+.latest-news{
+    margin-top: 50px;
+}
+.newstitle {
+    font-weight: 300;
+    color: #666;
+}
+.latest-news ul{
+    padding-left: 0;
+}
+.snippet{
+    margin: 24px 0;
+    list-style-type: none;
+}
+.thumbnail{
+    width: 100px;
+    float: left;
+    margin-right: 1em;
+}
+.snippet-title {
+    font-weight: 400;
+    color: #666;
+}
+.snippet p{
+    color: #666;
+}
+footer {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    justify-content: flex-start; 
+}
+footer li {
+    list-style-type: none;
+    margin-right: 4em;
+    color: #333;
+}
