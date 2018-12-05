@@ -59,7 +59,7 @@ h1 {
 .news-list {
     list-style: none;
     line-height: 60px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .games {
     padding-top: 1em;
