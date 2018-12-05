@@ -161,11 +161,11 @@ th{
     margin-right: 1em;
 }
 .snippet-title {
-    font-weight: 400;
-    color: #666;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
 }
 .snippet p{
-    color: #666;
+    color: rgba(0,0,0,0.5);
 }
 footer {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
@@ -182,19 +182,22 @@ footer li {
     color: #333;
 }
 @media (max-width: 420px) {
-    html{
+    html {
         margin: 0;
-        padding: 0;
+        overflow-y: -webkit-paged-y;
+    }
+    body {
+        margin: 0;
     }
     .header {
         display: grid;
         grid-template-columns: 15% 60% 25%;
     }
-    }
-    .header img{
+    .header img {
         width: 80%;
     }
     h1 {
+        font-weight: 400;
         font-size: 20px;
     }
     .menu-icon {
@@ -229,20 +232,38 @@ footer li {
         background-color: rgba(0,0,0,0.5);
         font-size: 10px;
     }
+    .news{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .news-more{
+        margin-right: 25px;
+    }
     .news-list {
         font-size: small;
         line-height: 30px;
         padding: 5px 0 5px;
     }
+    .scores-table{
+        border-collapse: collapse;
+    }
+    .scores-table tr:nth-child(odd) td {
+        background-color: rgb(255,255,255);
+    }
+    
+    .scores-table tr:nth-child(even) td {
+        background-color: rgb(236,239,241);
+    }
     .scores-table th, .scores-table td {
         font-size: smaller;
     }
     .scores-table th{
-        background-color: rgb(40, 144, 170);
+        background-color: rgb(120, 144, 156);
         margin: 0;
     }
     .weather {
         margin-top: 0px;
+        padding-left: 5px;
     }
     .days {
         margin-left: 0px;
@@ -253,5 +274,19 @@ footer li {
     }
     .temp {
         margin-left: 0px;
+    }
+    .latest-news {
+        margin-top: 0;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .snippet-title{
+        font-size: medium;
+    }
+    .snippet p{
+        font-size: small;
+    }
+    footer li{
+        font-size: small;
     }
 }
