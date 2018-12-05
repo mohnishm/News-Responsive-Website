@@ -2,7 +2,7 @@ html {
     margin: 55px 40px 100px 40px;
     font-family: "Roboto", sans-serif;
 }
-.Header {
+.header {
     display: grid;
     grid-template-columns: 15% 85%;
     box-shadow: 0 5px 2px 0px rgba(0, 0, 0, 0.25);
@@ -50,7 +50,7 @@ h1 {
     position: relative;
     color: rgba(0, 0, 0, 0.65);
 }
-.newsmore {
+.news-more {
     float: right;
 }
 .newslist {
@@ -130,7 +130,7 @@ th{
 .latest-news{
     margin-top: 50px;
 }
-.newstitle {
+.news-title {
     font-weight: 300;
     color: #666;
 }
