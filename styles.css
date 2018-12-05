@@ -5,13 +5,16 @@ html {
 .header {
     display: grid;
     grid-template-columns: 15% 85%;
-    box-shadow: 0 5px 2px 0px rgba(0, 0, 0, 0.25);
 }
 h1 {
     font-size: 70px;
     font-weight: 300;
 }
-
+.line{
+    height: 2px;
+    box-shadow: 0 5px 2px 0px rgba(0, 0, 0, 0.25);
+    margin-top: -20px;
+}
 .navlist {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -33,13 +36,15 @@ h1 {
 }
 .dogpic {
     position: absolute;
+    display: block;
     z-index: 1;
     width: 100%;
+    height: auto;
 }
 .box-desc {
     position: absolute;
     z-index: 2;
-    width: 1255px;
+    width: 100%;
     background-color: white;
     color: rgb(175, 175, 175);
     padding-left: 1em;
@@ -99,6 +104,15 @@ th{
     justify-content: flex-start;
     align-items: center;
 }
+.forecast h2 {
+    font-weight: 300;
+    font-size: 50px;
+}
+.forecast h3{
+    font-weight: 300;
+    font-size: 35px;
+}
+
 .days{
     margin-left: 50px;
 }
@@ -166,4 +180,78 @@ footer li {
     list-style-type: none;
     margin-right: 4em;
     color: #333;
+}
+@media (max-width: 420px) {
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 15% 60% 25%;
+    }
+    }
+    .header img{
+        width: 80%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .menu-icon {
+        display: grid;
+        grid-template-rows: 30% 30% 30%;
+        padding-left: 60px;
+        padding-top: 10px;
+    }
+    .menu {
+        width: 40px;
+        height: 5px;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+    .line {
+        height: 0px;
+    }
+    nav {
+        display: none;
+    }
+    .box {
+        width: 100%;
+        height: 220px;
+        margin-top: 20px;
+    }
+    .dogpic {
+        max-width: 100%;
+    }
+    .box-desc {
+        width: 100%;
+        height: 40%;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        font-size: 10px;
+    }
+    .news-list {
+        font-size: small;
+        line-height: 30px;
+        padding: 5px 0 5px;
+    }
+    .scores-table th, .scores-table td {
+        font-size: smaller;
+    }
+    .scores-table th{
+        background-color: rgb(40, 144, 170);
+        margin: 0;
+    }
+    .weather {
+        margin-top: 0px;
+    }
+    .days {
+        margin-left: 0px;
+    }
+    .weather-list {
+        width: 80px;
+        height: 80px;
+    }
+    .temp {
+        margin-left: 0px;
+    }
 }
